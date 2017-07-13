@@ -4,8 +4,6 @@ var ge = document.getElementById("gamemodes");
 var re = document.getElementById("regions");
 var se = document.getElementById("servers");
 
-console.log(servers)
-
 for (i in Object.keys(servers)){
 	var option = document.createElement("option");
 	option.text = Object.keys(servers)[i];
@@ -49,7 +47,11 @@ function clearServers() {
 }
 
 function setSelectedServer() {
-	document.getElementById("result").innerHTML = se.value
+	document.getElementById("result").innerHTML = se.value;
+
+	chrome.tabs.query({currentWindow: true, active: true}, function (tab) {
+      chrome.tabs.update(tab.id, {url: `https://moomoo.io/?party=${se.value}`});
+	});
 }
 
 ge.onchange = updateRegions;
