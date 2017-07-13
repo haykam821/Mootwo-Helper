@@ -9,6 +9,12 @@
       "js": ["inject.js"]
     }
   ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "tabs"
+  ],
   "browser_action": {
     "default_popup": "pop.html",
     "default_icon": {
