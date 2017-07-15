@@ -1,7 +1,7 @@
 {
   "name": "Mootwo Servers",
   "manifest_version": 2,
-  "version": "1.0",
+  "version": "1.1",
   "description": "Select trusted Mootwo servers with ease.",
   "default_locale": "en",
   "content_scripts": [
