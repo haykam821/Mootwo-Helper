@@ -3,6 +3,7 @@
   "manifest_version": 2,
   "version": "1.0",
   "description": "Select trusted Mootwo servers with ease.",
+  "default_locale": "en",
   "content_scripts": [
     {
       "matches": ["http://moomoo.io/*"],
