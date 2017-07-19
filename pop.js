@@ -24,6 +24,7 @@ function updateRegions() {
   }
 
 	re.value = 'info';
+	se.value = 'info';
 }
 
 function updateServers() {
