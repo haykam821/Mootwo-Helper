@@ -22,6 +22,8 @@ function updateRegions() {
 
 		re.add(option);
   }
+
+	re.value = 'info';
 }
 
 function updateServers() {
@@ -35,6 +37,17 @@ function updateServers() {
 
 		se.add(option);
   }
+
+	se.value = 'info';
+}
+
+function clearRegions() {
+	var length = re.options.length;
+	for (i = 0; i < length; i++) {
+  	if (re.options[i].className.split(' ').indexOf('info')==-1) {
+	  	re.options[i] = null;
+    }
+	}
 }
 
 function clearServers() {
