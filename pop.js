@@ -64,9 +64,9 @@ $.getJSON('https://cdn.rawgit.com/haykam821/Mootwo-Helper/ac701af3/servers.json'
 	  	option.value = servers[ge.value][re.value][i];
 
 			se.add(option);
-	  }
 
-		se.value = 'info';
+			se.value = 'info';
+	  }
 
 		ge.onchange = updateRegions;
 		re.onchange = updateServers;
