@@ -28,9 +28,7 @@ var ge = document.getElementById("gamemodes");
 var re = document.getElementById("regions");
 var se = document.getElementById("servers");
 
-$.getJSON('https://cdn.rawgit.com/haykam821/Mootwo-Helper/ac701af3/servers.json', function(data) {
-	var servers = JSON.parse(data);
-
+$.getJSON('https://cdn.rawgit.com/haykam821/Mootwo-Helper/ac701af3/servers.json', function(servers) {
 	for (i in Object.keys(servers)){
 		var option = document.createElement("option");
 		option.text = Object.keys(servers)[i];
