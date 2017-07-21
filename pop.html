@@ -23,17 +23,21 @@
     background-color:transparent;
     outline-width: 0;
   }
+
+  .info {
+    background-color: black !important;
+  }
 </style>
 
 <body width=300>
   <select id='gamemodes'>
-  <option selected disabled class='info'>Gamemodes</option>
+  <option selected disabled value='info' class='info'>Gamemodes</option>
   </select>
   <select id='regions'>
-  <option selected disabled class='info'>Regions</option>
+  <option selected disabled value='info' class='info'>Regions</option>
   </select>
   <select id='servers'>
-  <option selected disabled class='info'>Servers</option>
+  <option selected disabled value='info' class='info'>Servers</option>
   </select>
 
   <div id='result'>
@@ -41,4 +45,5 @@
   </div>
 </body>
 
+<script src="jquery-3.2.1.min.js"></script>
 <script src="pop.js"></script>

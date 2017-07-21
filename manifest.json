@@ -10,7 +10,7 @@
     }
   ],
   "background": {
-    "scripts": ["background.js", "jquery-3.2.1.min.js"]
+    "scripts": ["background.js"]
   },
   "permissions": [
     "*://moomoo.io/*"
