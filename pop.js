@@ -28,10 +28,6 @@ var ge = document.getElementById("gamemodes");
 var re = document.getElementById("regions");
 var se = document.getElementById("servers");
 
-ge.onchange = updateRegions;
-re.onchange = updateServers;
-se.onchange = setSelectedServer;
-
 $.getJSON('https://cdn.rawgit.com/haykam821/Mootwo-Helper/ac701af3/servers.json', function(data) {
 	var servers = JSON.parse(data);
 
@@ -71,5 +67,9 @@ $.getJSON('https://cdn.rawgit.com/haykam821/Mootwo-Helper/ac701af3/servers.json'
 	  }
 
 		se.value = 'info';
+
+		ge.onchange = updateRegions;
+		re.onchange = updateServers;
+		se.onchange = setSelectedServer;
 	}
 });
